@@ -13,16 +13,9 @@ class miLista4:public queue<T> {
 public:
 
 	void cmp(Nodo *izq, Nodo *der){
-		if (izq == nullptr) {
-			izq->sig = der;
-			return;
-		}
-		if (der == nullptr) {
-			der->sig = der;
-			return;
-		}
+		if (izq == nullptr || der == nullptr)  return;
 
-		if(izq->elem < der->elem) {
+		if(izq->elem <= der->elem) {
 			cmp(izq->sig, der);
 			izq->sig = der;
 		} else {
@@ -31,11 +24,36 @@ public:
 		}
 	}
 
+	Nodo *cmp2(Nodo *izq, Nodo *der){
+		if (izq == nullptr && der == nullptr)  return nullptr;
+		if(izq == nullptr) return der;
+		if(der == nullptr) return izq;
+
+		if(izq->elem <= der->elem) {
+			Nodo *sig = cmp2(izq->sig, der);
+			izq->sig = sig;
+			return izq;
+		} else {
+			Nodo *sig = cmp2(der->sig, izq);
+			der->sig = sig;
+			return der;
+		}
+	}
+
 	void mezclar(miLista4<T> &subcola) {
 		Nodo * act = this->prim;
 		Nodo * subact = subcola.prim;
 
-		cmp(act, subact);
+		if(subcola.empty()) return;
+
+		if(!this->empty()) {
+			cmp2(act, subact);
+		}
+		else {
+			this->prim = subcola.prim;
+			this->ult = subcola.ult;
+		}
+
 		if(subcola.prim->elem < this->prim->elem)
 			this->prim = subcola.prim;
 		if (subcola.ult->elem > this->ult->elem)

@@ -1,5 +1,5 @@
-// E53
-// Alejandro Ruiz Valero
+// A21
+// Gallardo Cruzado Mario D
 
 // Comentario general sobre la solución,
 // explicando cómo se resuelve el problema
@@ -12,21 +12,21 @@
 // configuración, y escribiendo la respuesta
 bool resuelveCaso() {
 
-	int num;
+	int num = 1;
 
 	miLista4<int> col;
 	miLista4<int> subcola;
 
 	while (num != 0) {
 		std::cin >> num;
-		col.push(num);
+		if(num!=0)col.push(num);
 	}
 
 	num = 1;
 
 	while (num != 0) {
 		std::cin >> num;
-		subcola.push(num);
+		if(num!=0) subcola.push(num);
 	}
 
 	col.mezclar(subcola);
