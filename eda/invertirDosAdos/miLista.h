@@ -17,7 +17,7 @@ public:
 		if(der == nullptr) return izq;
 		if(izq == nullptr) return nullptr;
 
-		izq->sig = intercambiar(der->sig, (der->sig ? der->sig->sig:nullptr));
+		izq->sig = intercambiar(der->sig, (der->sig ? der->sig->sig : nullptr));
 		der->sig = izq;
 		return der;
 	}

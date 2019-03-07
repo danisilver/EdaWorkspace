@@ -8,18 +8,22 @@
 
 bool resuelveCaso() {
 
-	int num = 1;
+	int numElementos;
 
 	miLista<int> col;
-	miLista<int> subcola;
+
+	std::cin >> numElementos;
+
+	if(numElementos == 0) return false;
+
+	for (int i = 0; i < numElementos; ++i) {
+		int elemento;
+		std::cin >> elemento;
+		col.push(elemento);
+	}
 
 	if (!std::cin)  // fin de la entrada
 		return false;
-
-	while (num != 0) {
-		std::cin >> num;
-		if(num!=0)col.push(num);
-	}
 
 	col.invertirDosAdos();
 	col.mostrar();
