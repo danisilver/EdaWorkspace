@@ -47,7 +47,8 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="invertirDosAdos.cpp|src|linterna|src/DuplicarLista.cpp|src/polinomiosMain.cpp|src/mezclarListas.cpp|src/anadirElementosLista.cpp|src/invertirLista.cpp|src/DuplicarLista8A.cpp|src/linterna.cpp|src/trenes.cpp|src/alumnoAfortunado.cpp|src/parentesis.cpp|src/kelementmayores.cpp|src/mandelbrot.cpp|src/pelis.cpp|src/solution.cpp|src/feliz.cpp|src/fugaPrision.cpp|src/PerfilCurvaConcava.cpp|src/Unique.cpp|src/colones.cpp|src/Nreinas.cpp|src/09.cpp|src/main.c|src/asaltoaltren.cpp|src/tenis.cpp|src/sumaValores.cpp|src/seleccionEsp.cpp|src/rescate.cpp|src/particion.cpp|src/movil.cpp|src/matrices1.cpp|src/perdido.cpp|src/25.cpp|src/Combinatorios.cpp|src/LuckyLuke.cpp|src/kiveces.cpp|src/Fibonacci.cpp|src/Disperso.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="mezclarLista|alumnoAfortunado|invertirDosAdos.cpp|src|linterna|src/DuplicarLista.cpp|src/polinomiosMain.cpp|src/mezclarListas.cpp|src/anadirElementosLista.cpp|src/invertirLista.cpp|src/DuplicarLista8A.cpp|src/linterna.cpp|src/trenes.cpp|src/alumnoAfortunado.cpp|src/parentesis.cpp|src/kelementmayores.cpp|src/mandelbrot.cpp|src/pelis.cpp|src/solution.cpp|src/feliz.cpp|src/fugaPrision.cpp|src/PerfilCurvaConcava.cpp|src/Unique.cpp|src/colones.cpp|src/Nreinas.cpp|src/09.cpp|src/main.c|src/asaltoaltren.cpp|src/tenis.cpp|src/sumaValores.cpp|src/seleccionEsp.cpp|src/rescate.cpp|src/particion.cpp|src/movil.cpp|src/matrices1.cpp|src/perdido.cpp|src/25.cpp|src/Combinatorios.cpp|src/LuckyLuke.cpp|src/kiveces.cpp|src/Fibonacci.cpp|src/Disperso.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="alumnoAfortunado"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -96,7 +97,8 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="invertirDosAdos.cpp|src|linterna|src/DuplicarLista.cpp|src/polinomiosMain.cpp|src/mezclarListas.cpp|src/anadirElementosLista.cpp|src/invertirLista.cpp|src/DuplicarLista8A.cpp|src/linterna.cpp|src/trenes.cpp|src/alumnoAfortunado.cpp|src/parentesis.cpp|src/kelementmayores.cpp|src/mandelbrot.cpp|src/pelis.cpp|src/solution.cpp|src/feliz.cpp|src/fugaPrision.cpp|src/PerfilCurvaConcava.cpp|src/Unique.cpp|src/colones.cpp|src/Nreinas.cpp|src/09.cpp|src/main.c|src/asaltoaltren.cpp|src/tenis.cpp|src/sumaValores.cpp|src/seleccionEsp.cpp|src/rescate.cpp|src/particion.cpp|src/movil.cpp|src/matrices1.cpp|src/perdido.cpp|src/25.cpp|src/Combinatorios.cpp|src/LuckyLuke.cpp|src/kiveces.cpp|src/Fibonacci.cpp|src/Disperso.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="mezclarLista|alumnoAfortunado|invertirDosAdos.cpp|src|linterna|src/DuplicarLista.cpp|src/polinomiosMain.cpp|src/mezclarListas.cpp|src/anadirElementosLista.cpp|src/invertirLista.cpp|src/DuplicarLista8A.cpp|src/linterna.cpp|src/trenes.cpp|src/alumnoAfortunado.cpp|src/parentesis.cpp|src/kelementmayores.cpp|src/mandelbrot.cpp|src/pelis.cpp|src/solution.cpp|src/feliz.cpp|src/fugaPrision.cpp|src/PerfilCurvaConcava.cpp|src/Unique.cpp|src/colones.cpp|src/Nreinas.cpp|src/09.cpp|src/main.c|src/asaltoaltren.cpp|src/tenis.cpp|src/sumaValores.cpp|src/seleccionEsp.cpp|src/rescate.cpp|src/particion.cpp|src/movil.cpp|src/matrices1.cpp|src/perdido.cpp|src/25.cpp|src/Combinatorios.cpp|src/LuckyLuke.cpp|src/kiveces.cpp|src/Fibonacci.cpp|src/Disperso.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="alumnoAfortunado"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

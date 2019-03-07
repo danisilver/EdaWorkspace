@@ -1,25 +1,7 @@
 
-// A21
-// Gallardo Cruzado Mario D
 
 /* casos.txt
-6
-1 3 5 7 0
-2 4 6 8 0
-2 4 6 8 0
-1 3 5 7 0
-1 2 3 0
-6 7 8 0
-1 10 20 0
-2 6 8 12 20 22 0
-0
-1 2 3 0
-1 1 2 2 0
-0
 */
-
-// Comentario general sobre la solución,
-// explicando cómo se resuelve el problema
 
 #include <iostream>
 #include <fstream>
