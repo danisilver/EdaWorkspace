@@ -35,17 +35,17 @@ public:
 		Nodo *prim = cmp(act, subact);
 		this->prim = prim;
 
-		Nodo *antePenultimo = act;
+		act = cmp(this->ult, subcola.ult);
+		Nodo *ult = act;
 		while(act != nullptr){
 			act = act->sig;
-			antePenultimo = act;
+			ult = act;
 		}
-		this->ult = antePenultimo;
+		this->ult = ult;
 
 
 		this->nelems += subcola.nelems;
-		subcola.prim = nullptr;
-		subcola.ult = nullptr;
+		subcola.prim = subcola.ult = nullptr;
 		subcola.nelems = 0;
 	}
 	/*
