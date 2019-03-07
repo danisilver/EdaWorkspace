@@ -35,7 +35,7 @@ public:
 		Nodo *prim = cmp(act, subact);
 		this->prim = prim;
 
-		act = cmp(this->ult, subcola.ult);
+		//act = cmp(this->ult, subcola.ult);
 		Nodo *ult = act;
 		while(act != nullptr){
 			act = act->sig;
@@ -48,49 +48,6 @@ public:
 		subcola.prim = subcola.ult = nullptr;
 		subcola.nelems = 0;
 	}
-	/*
-			if(!this->empty()) {
-				cmp(act, subact);
-			} else {
-				this->prim = subcola.prim;
-				this->ult = subcola.ult;
-			}
-
-			if(subcola.prim->elem < this->prim->elem)//Segfault
-				this->prim = subcola.prim;
-			if (subcola.ult->elem > this->ult->elem)
-				this->ult = subcola.ult;
-
-	*/
-	/*
-		Nodo * act = this->prim;
-
-
-		while(subcola.prim != nullptr){
-			Nodo *actprim = subcola.prim;
-			Nodo *antprim = actprim;
-			while(subcola.prim != nullptr && act->elem > subcola.front()){
-				antprim = actprim;
-				actprim = actprim->sig;
-			}
-			if(antprim != subcola.prim){
-				antprim->sig = this->prim;
-				this->prim = subcola.prim;
-				subcola.prim = actprim;
-			}
-
-			Nodo *anterior = act;
-			while(subcola.prim != nullptr && act->elem < subcola.front()){
-				anterior = act;
-				act = act->sig;
-			}
-			if(anterior != act){
-				Nodo *next = subcola.prim;
-				subcola.prim = subcola.prim->sig;
-				next->sig = act;
-				anterior->sig = next;
-			}
-		}*/
 
 	void mostrar() {
 
@@ -102,17 +59,5 @@ public:
 		std::cout << std::endl;
 
 	}
-
-/*	void cmp(Nodo *izq, Nodo *der){
-		if (izq == nullptr || der == nullptr)  return;
-
-		if(izq->elem <= der->elem) {
-			cmp(izq->sig, der);
-			izq->sig = der;
-		} else {
-			cmp(izq, der->sig);
-			der->sig = izq;
-		}
-	}*/
 
 };
