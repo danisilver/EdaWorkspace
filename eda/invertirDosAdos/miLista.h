@@ -13,13 +13,11 @@ class miLista : public queue<T> {
 public:
 
 	Nodo *intercambiar(Nodo *izq, Nodo *der){
-		this->ult = izq;
+		if(izq != nullptr) this->ult = izq;
 		if(der == nullptr) return izq;
+		if(izq == nullptr) return nullptr;
 
-		if(der->sig != nullptr)
-			izq->sig = intercambiar(der->sig, der->sig->sig);
-		else
-			izq->sig = nullptr;
+		izq->sig = intercambiar(der->sig, (der->sig ? der->sig->sig:nullptr));
 		der->sig = izq;
 		return der;
 	}
