@@ -13,9 +13,9 @@ class miLista : public queue<T> {
 public:
 
 	Nodo *intercambiar(Nodo *izq, Nodo *der){
-		if(izq != nullptr) this->ult = izq;
 		if(der == nullptr) return izq;
 		if(izq == nullptr) return nullptr;
+		else this->ult = izq;
 
 		izq->sig = intercambiar(der->sig, (der->sig ? der->sig->sig : nullptr));
 		der->sig = izq;
@@ -24,9 +24,7 @@ public:
 
 	void invertirDosAdos() {
 		if(this->size() < 2) return;
-
 		this->prim = intercambiar(this->prim, this->prim->sig);
-		this->ult->sig = nullptr;
 	}
 
 	void mostrar() {
@@ -36,7 +34,6 @@ public:
 			act = act->sig;
 		}
 		std::cout << std::endl;
-
 	}
 
 };
