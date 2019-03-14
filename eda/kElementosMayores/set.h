@@ -76,6 +76,7 @@ void set<T>::insert(T e) {
             amplia();
         int ind = 0;
         bool empujar = false;
+        //Hector: de mayor a menor
         for (int i = 0; i < contador; ++i) {
 			if(empujar){
 				int j = i - ind;

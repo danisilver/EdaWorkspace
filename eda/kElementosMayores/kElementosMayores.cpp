@@ -25,7 +25,7 @@ bool resuelveCaso() {
 			std::cin >> palabra;
 			if(palabra.compare("FIN") != 0) conjunto.insert(palabra);
 		}
-		while(conjunto.size() > 3) conjunto.eliminaMenor();
+		while(conjunto.size() > kElementos) conjunto.eliminaMenor();
 		conjunto.mostrar();
 	} else if(caracter == 'N') {
 		int num = 0;
@@ -34,7 +34,7 @@ bool resuelveCaso() {
 			std::cin >> num;
 			if(num != -1) conjunto.insert(num);
 		}
-		while(conjunto.size() > 3) conjunto.eliminaMenor();
+		while(conjunto.size() > kElementos) conjunto.eliminaMenor();
 		conjunto.mostrar();
 	} else {return false;}
 
@@ -50,7 +50,7 @@ int main() {
     // Para la entrada por fichero.
     // Comentar para acepta el reto
     #ifndef DOMJUDGE
-     std::ifstream in("casos.txt");
+     std::ifstream in("datos.txt");
      auto cinbuf = std::cin.rdbuf(in.rdbuf()); //save old buf and redirect std::cin to casos.txt
      #endif
 
