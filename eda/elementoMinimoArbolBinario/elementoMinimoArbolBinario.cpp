@@ -7,30 +7,19 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <exception>
 #include "bintree_eda.h"
 
-
-template <typename T>
-T minimo(bintree<T> const &tree){
-	bintree<T> left = tree.left();
-	bintree<T> right = tree.right();
-
-	if(left.empty() && right.empty()) {
-		return tree.root();
-	} else if(left.empty() && !right.empty()){
-		T rval = right.root();
-		T t = tree.root();
-		return rval < t ? rval : t;
-	} else  if(!left.empty() && right.empty()){
-		T lval = left.root();
-		T t = tree.root();
-		return lval < t ? lval : t;
-	} else {
-		T izq = minimo(left);
-		T der = minimo(right);
-		return (izq < der) ? izq : der;
-	}
+template<typename T>
+T minimoRecursion(bintree<T> const &tree) {
+	if (tree.left().empty() && tree.right().empty()) return tree.root();
+	return std::min(
+			tree.root(),
+			std::min(
+					minimoRecursion(tree.left().empty() ? ({ tree.root(); }) : tree.left()),
+					minimoRecursion(tree.right().empty() ? ({ tree.root(); }) : tree.right())));
 }
+
 // resuelve un caso de prueba, leyendo de la entrada la
 // configuración, y escribiendo la respuesta
 bool resuelveCaso() {
@@ -46,12 +35,12 @@ bool resuelveCaso() {
    if(c=='N'){
 	   int emptyElement = -1;
 	   bintree<int> tree = leerArbol(emptyElement);
-	   int min = minimo(tree);
+	   int min = minimoRecursion(tree);
 	   std::cout << min << std::endl;
    } else {
 	   std::string emptyElement = "#";
 	   bintree<std::string> tree = leerArbol(emptyElement);
-	   std::string r = minimo(tree);
+	   std::string r = minimoRecursion(tree);
 	   std::cout << r << std::endl;
    }
 
