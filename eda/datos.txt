@@ -1,9 +1,6 @@
-N
-3
-1 8 3 14 5 -1
-P
+1
+3 2 0 0 0 2 0 0
 2
-maria luis marta juan alberto FIN
-N
+3 2 0 0 0 2 0 0
 3
-1 2 3 4 5 6 6 6 -1
+3 2 0 0 0 2 0 0

@@ -5,7 +5,7 @@
 #include "bintree_eda.h"
 
 template <typename T>
-T minimo(bintree<T> &tree, std::vector<int> vec ++¡'' ){
+T minimo(bintree<T> &tree, std::vector<int> vec){
 
 }
 // resuelve un caso de prueba, leyendo de la entrada la
